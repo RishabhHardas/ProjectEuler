@@ -7,6 +7,19 @@ int main()
 	int factor = 2;
 	int last_factor = 0;
 
+	if (n % 2 == 0) {
+		n = n/2;
+		last_factor = 2;
+
+		while (n % 2 == 0) {
+			n = n/2;
+		}
+	}
+	else
+		last_factor = 1;
+
+	factor = 3;
+
 	while ( n > 1) {
 		if (n % factor == 0) {
 			last_factor = factor;
